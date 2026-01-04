@@ -12,7 +12,6 @@ local function lazy(init, set)
 		end,
 	})
 	set(lazyt)
-	return lazyt
 end
 local mod; lazy(function()
 	return { 1, 2, 3 } -- initialize the module
