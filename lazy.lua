@@ -14,8 +14,7 @@ local function lazy(init, set)
 	set(lazyt)
 	return lazyt
 end
-local mod
-mod = lazy(function()
+local mod; lazy(function()
 	return { 1, 2, 3 } -- initialize the module
 end, function(t)
 	mod = t -- update the reference of the variable
